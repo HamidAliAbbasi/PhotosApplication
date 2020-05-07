@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TitledPane alignment="CENTER" animated="false"
+	collapsible="false" maxHeight="-Infinity" maxWidth="-Infinity"
+	minHeight="-Infinity" minWidth="-Infinity" prefHeight="127.0"
+	prefWidth="199.0" text="Add User"
+	xmlns="http://javafx.com/javafx/11.0.1"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="controllers.adduserController">
+	<content>
+		<AnchorPane minHeight="0.0" minWidth="0.0"
+			prefHeight="120.0" prefWidth="220.0">
+			<children>
+				<TextField fx:id="userNameTextField" layoutX="17.0"
+					layoutY="14.0" promptText="Username">
+					<font>
+						<Font name="System Font" size="12.0" />
+					</font>
+				</TextField>
+				<Button fx:id="addUserButton" layoutX="17.0" layoutY="60.0"
+					onAction="#addUser" mnemonicParsing="false" text="Add User">
+					<font>
+						<Font size="12.0" />
+					</font>
+				</Button>
+				<Button fx:id="close" layoutX="131.0" layoutY="60.0"
+					onAction="#close" mnemonicParsing="false" text="Close">
+					<font>
+						<Font size="12.0" />
+					</font>
+				</Button>
+			</children>
+		</AnchorPane>
+	</content>
+	<font>
+		<Font name="Arial" size="12.0" />
+	</font>
+</TitledPane>
